@@ -1,0 +1,267 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  background-color: var(--background-black-color);
+  min-height: 100vh;
+}
+
+.calender-submit-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.calendar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  filter: drop-shadow(0 0 0.75rem #0ef);
+}
+
+.calendar-name {
+  color: var(--text-1);
+}
+
+.calendar-profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #0ef;
+  color: var(--text-1);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calendar {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 3px solid #0ef;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+  height: 400px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  color: #0ef;
+}
+.calendar-header button {
+  background-color: transparent;
+  color: #0ef;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.calendar-header div {
+  font-size: 1.2em;
+  color: #0ef;
+}
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  color: #0ef;
+  cursor: pointer;
+}
+
+.calendar-day-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.calendar-day-name {
+  background-color: transparent;
+  color: #0ef;
+  font-weight: bold;
+  font-size: 25px;
+}
+.calendar-day {
+  background-color: transparent;
+  color: #0ef;
+  font-size: 25px;
+  font-weight: 700;
+  width: 50px;
+}
+
+.calendar-day:hover {
+  background-color: #0ef;
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.current-day {
+  background-color: #0ef;
+  color: #000;
+  border-radius: 50%;
+}
+
+.leave-day {
+  background-color: red !important;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.submitted-day {
+  background-color: green !important;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.track-iocns {
+  font-size: 30px;
+}
+
+.atte-form-container {
+  border-radius: 20px;
+  border: 2px solid var(--text-1);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--text-1);
+  background-color: var(--background-black-color);
+  padding: 20px 30px;
+}
+
+.leve-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-full-date {
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid #0ef;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.leve-but {
+  background-color: red;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 115px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.leve-but:hover {
+  transform: scale(1.06);
+}
+
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-container-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.time-label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.time-container-items input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--text-1);
+  color: var(--text-1);
+  padding: 2px 5px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.time-container-items input[type="time"]::-webkit-calendar-picker-indicator {
+  background-color: #0ef;
+  color: #0ef;
+  font-size: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.submit-comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.comments-container {
+  display: flex;
+  gap: 10px;
+}
+
+.comments-container label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.comments-container input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #0ef;
+  padding: 2px 10px;
+  height: 30px;
+  color: #0ef;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.comments-container input::placeholder {
+  color: #0ef;
+  font-weight: 400;
+}
+
+.submit-comments-container button {
+  width: 250px;
+  height: 30px;
+  border: none;
+  background-color: #0ef;
+  color: #111;
+  border-radius: 20px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.submit-comments-container button:hover {
+  transform: scale(1.02);
+}

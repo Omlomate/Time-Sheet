@@ -1,0 +1,353 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-black-color);
+  align-items: center;
+  padding: 20px 80px 0px 90px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem #0ef);
+}
+
+.name {
+  font-size: 40px;
+  color: var(--text-1);
+  display: flex;
+  gap: 5px;
+}
+
+.login-btn {
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  background-color: #0ef;
+  color: #000;
+  font-weight: 700;
+  border: 0;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
+
+.form {
+  border: 2px solid #0ef;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0 30px;
+  align-items: center;
+  height: 550px;
+  width: 600px;
+  margin-top: 20px;
+}
+.register-heading {
+  margin-bottom: 50px;
+  color: var(--text-1);
+}
+
+.input-field {
+  background-color: transparent;
+  margin-bottom: 30px;
+  width: 75%;
+  color: #0ef;
+  inset: 10px;
+  padding: 0 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border-bottom: 2px solid #0ef;
+  font-family: sans-serif;
+}
+
+.input-field::placeholder {
+  color: #0ef;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0px;
+}
+
+.password-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #0ef;
+  margin-bottom: 30px;
+  width: 75%;
+  padding: 0 10px;
+}
+.input-field-pass {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  color: #0ef;
+  inset: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  font-family: sans-serif;
+}
+.input-field-pass::placeholder {
+  color: #0ef;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.eye-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #0ef;
+}
+.signup-btn {
+  background-color: transparent;
+  border: 2px solid #0ef;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #0ef;
+  font-weight: 600;
+  height: 40px;
+  width: 75%;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.signup-btn:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 540px) {
+  .register-form {
+    padding: 20px 40px 0 40px;
+  }
+
+  .header--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+  .name {
+    font-size: 20px;
+  }
+
+  .login-btn {
+    border-radius: 25px;
+    height: 30px;
+    width: 60px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #0ef;
+    color: #000;
+    border: none;
+    outline: none;
+  }
+
+  .form {
+    margin-top: 40px;
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .register-form {
+    padding: 20px 20px 0 20px;
+  }
+  .header--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+  .name {
+    font-size: 40px;
+  }
+
+  .login-btn {
+    border-radius: 25px;
+    height: 50px;
+    width: 120px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #0ef;
+    color: #000;
+    border: none;
+    outline: none;
+  }
+
+  .form {
+    width: 600px;
+    height: 700px;
+    margin-top: 90px;
+  }
+
+  .register-heading {
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+
+  .signup-btn {
+    margin-top: 30px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .input-field {
+    font-size: 30px;
+  }
+
+  .input-field::placeholder {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .input-field-pass {
+    font-size: 30px;
+  }
+  .input-field-pass::placeholder {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .eye-icon {
+    font-size: 35px;
+    cursor: pointer;
+    color: #0ef;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .register-form {
+    padding: 20px 30px 0 30px;
+  }
+
+  .form {
+    margin-top: 130px;
+    width: 680px;
+    height: 700px;
+  }
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+  .name {
+    font-size: 35px;
+  }
+  .register-heading {
+    font-size: 55px;
+    margin: 10px 0px 50px 0px;
+  }
+
+  .input-field {
+    font-size: 30px;
+  }
+  .input-field::placeholder {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .input-field-pass {
+    font-size: 30p;
+  }
+
+  .input-field-pass::placeholder {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .eye-icon {
+    font-size: 40px;
+  }
+
+  .signup-btn {
+    margin-top: 40px;
+    font-size: 30px;
+    height: 60px;
+    border-radius: 35px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .form {
+    width: 500px;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .name {
+    height: 70px;
+    width: 400px;
+  }
+  .input-field {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .form {
+    margin-top: 50px;
+    width: 550px;
+    height: 550px;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .input-field {
+    font-size: 30px;
+  }
+
+  .input-field::placeholder {
+    font-size: 25px;
+  }
+
+  .input-field-pass {
+    font-size: 30px;
+  }
+  .input-field-pass::placeholder {
+    font-size: 25px;
+  }
+  .signup-btn {
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 27.5px;
+  }
+}

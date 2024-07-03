@@ -1,0 +1,134 @@
+.home-container {
+  padding: 20px 30px;
+  background-color: var(--background-black-color);
+  min-height: 100vh;
+}
+
+.home-header-container {
+  background-color: transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid #0ef;
+}
+
+.home-main-heading {
+  color: rgb(0, 238, 255);
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+
+.home-main-para {
+  color: #0ef;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.home-content {
+  color: #0ef;
+  margin-top: 50px;
+  border: 2px solid #0ef;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+.home-content-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.ul-container {
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  list-style: none;
+}
+
+.li-container {
+  margin-top: 20px;
+}
+
+.li-container-heading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  padding: 10px 15px;
+  height: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #000;
+  background-color: #0ef;
+  border-radius: 20px;
+}
+
+.li-container-para {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-container {
+    padding: 20px 20px;
+  }
+  .ul-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-main-heading {
+    font-size: 30px;
+  }
+  .home-main-para {
+    font-size: 16px;
+  }
+  .li-container-heading {
+    font-size: 20px;
+  }
+  .li-container-para {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .ul-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .li-container-heading {
+    font-size: 25px;
+  }
+  .li-container-para {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .home-main-heading {
+    font-size: 33px;
+  }
+  .home-main-para {
+    font-size: 23px;
+  }
+  .ul-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .li-container-heading {
+    font-size: 30px;
+    height: 98px;
+  }
+  .li-container-para {
+    font-size: 23px;
+    font-weight: 600;
+  }
+}

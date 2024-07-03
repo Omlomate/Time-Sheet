@@ -1,0 +1,255 @@
+.losnlogin-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-black-color);
+}
+
+.losnlogin-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 32px; */
+  margin-bottom: 30px;
+  width: 95%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.company-logo {
+  height: 55px;
+  width: 55px;
+  border: 0px solid #0ef;
+  filter: drop-shadow(0 0 0.75rem #0ef);
+  border-radius: 100%;
+}
+
+.losnlogin-register {
+  background-color: transparent;
+  border: 3px solid #0ef;
+  border-radius: 25px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  width: 125px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  color: var(--text-1);
+}
+
+.losnlogin-register:hover {
+  transform: scale(1.08);
+}
+
+.losn-myform {
+  border: 2px solid #0ef;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  align-items: center;
+  height: 450px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+.login-header {
+  color: var(--text-1);
+  margin-bottom: 50px;
+}
+
+.losn-user-name {
+  background-color: transparent;
+  margin-bottom: 30px;
+  width: 95%;
+  color: #0ef;
+  padding: 0 12px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border-bottom: 3px solid #0ef;
+  font-family: sans-serif;
+}
+
+.losn-user-name::placeholder {
+  color: #0ef;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.losn-password-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #0ef;
+  margin-bottom: 30px;
+  width: 95%;
+  padding: 0 10px;
+}
+
+.losn-user-password {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  color: #0ef;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  font-family: sans-serif;
+}
+
+.losn-user-password::placeholder {
+  color: #0ef;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.losn-eye {
+  color: var(--text-1);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.losn-user-login {
+  background-color: transparent;
+  border: 2px solid #0ef;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  margin-top: 20px;
+  color: var(--text-1);
+}
+
+.losn-user-login:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 360px) {
+  .losnlogin-page-container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .losnlogin-header-container {
+    margin-top: 6px;
+    margin-left: 1px;
+    margin-right: 6px;
+  }
+
+  .losnlogin-register {
+    height: 30px;
+    width: 60px;
+    padding: 6px;
+    font-size: 10px;
+    font-weight: 0;
+  }
+
+  .losnlogin-register:hover {
+    transform: scale(1.05);
+  }
+
+  .losn-myform {
+    width: 285px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 640px) {
+  .company-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .losnlogin-register {
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 50px;
+  }
+
+  .losn-myform {
+    height: 370px;
+    width: 275px;
+  }
+
+  .losn-user-name {
+    width: 120%;
+  }
+
+  .losn-password-container {
+    width: 120%;
+  }
+  .losn-eye {
+    font-size: 20px;
+  }
+  .losn-user-login {
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 998px) {
+  .losnlogin-register {
+    height: 50px;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 999px) and (max-width: 1220px) {
+  .losnlogin-register {
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 30px;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1224px) {
+  .losn-company-name {
+    height: 75px;
+    width: 315px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 720px) {
+  .losn-company-name {
+    height: 53px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 600px) {
+  .losn-myform {
+    margin-top: 6px;
+    height: 300px;
+    width: 300px;
+  }
+} */
